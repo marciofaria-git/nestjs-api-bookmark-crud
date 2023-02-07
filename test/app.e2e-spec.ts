@@ -231,7 +231,7 @@ describe('App e2e', () => {
           .get('/bookmarks')
           .withHeaders({ Authorization: 'Bearer $S{userAt}' })
           .expectStatus(200)
-          .expectJsonLength(1);
+          .expectJsonLength(0);
       });
     });
   });
